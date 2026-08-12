@@ -12,9 +12,14 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Narendra Rajput | AI & Data Science Engineer",
   description: "Portfolio of Narendra Rajput",
+  icons: {
+    icon: "/ironman.png",
+    shortcut: "/ironman.png",
+    apple: "/ironman.png",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
