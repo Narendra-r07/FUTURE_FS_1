@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Narendra Rajput" }],
   creator: "Narendra Rajput",
 
-  metadataBase: new URL("https://narendra-rajput.vercel.app"),
+  metadataBase: new URL("https://narendra-rajput-portfolio.vercel.app"),
 
   alternates: {
     canonical: "/",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: "Narendra Rajput | AI & Data Science Engineer",
     description:
       "Portfolio of Narendra Rajput — AI, Machine Learning, Data Science and Full Stack Development.",
-    url: "https://narendra-rajput.vercel.app",
+    url: "https://narendra-rajput-portfolio.vercel.app",
     siteName: "Narendra Rajput Portfolio",
     type: "website",
   },

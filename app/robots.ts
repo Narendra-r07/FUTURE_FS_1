@@ -6,6 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://narendra-rajput.vercel.app/sitemap.xml",
+    sitemap:
+      "https://narendra-rajput-portfolio.vercel.app/sitemap.xml",
   };
 }
