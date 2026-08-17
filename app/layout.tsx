@@ -15,6 +15,8 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Narendra Rajput | AI & Data Science Engineer",
   description: "Portfolio of Narendra Rajput",
+  verification: {
+    google: "google5c497d98e3e16eb3.html",
   icons: {
     icon: "/ironman.png",
     shortcut: "/ironman.png",
