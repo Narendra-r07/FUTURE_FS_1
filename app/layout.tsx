@@ -13,8 +13,46 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Narendra Rajput | AI & Data Science Engineer",
-  description: "Portfolio of Narendra Rajput",
+  title: "Narendra Rajput | AI & Data Science Engineer | Portfolio",
+
+  description:
+    "Narendra Rajput's portfolio — AI & Data Science Engineer, Machine Learning and Python Developer from Mumbai, India.",
+
+  keywords: [
+    "Narendra Rajput",
+    "Narendra Rajput portfolio",
+    "Narendra Rajput AI",
+    "Narendra Rajput Data Science",
+    "Narendra Rajput Machine Learning",
+    "Narendra Rajput Python Developer",
+    "AI Data Science Engineer",
+    "Machine Learning Developer",
+    "Python Developer Mumbai",
+  ],
+
+  authors: [{ name: "Narendra Rajput" }],
+  creator: "Narendra Rajput",
+
+  metadataBase: new URL("https://narendra-rajput.vercel.app"),
+
+  alternates: {
+    canonical: "/",
+  },
+
+  openGraph: {
+    title: "Narendra Rajput | AI & Data Science Engineer",
+    description:
+      "Portfolio of Narendra Rajput — AI, Machine Learning, Data Science and Full Stack Development.",
+    url: "https://narendra-rajput.vercel.app",
+    siteName: "Narendra Rajput Portfolio",
+    type: "website",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+
   icons: {
     icon: "/ironman.png",
     shortcut: "/ironman.png",
