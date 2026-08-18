@@ -264,12 +264,43 @@ export default function Home() {
   const cardRotate1 = useTransform(scrollYProgress, [0, 0.5], [-12, 8]);
   const cardRotate2 = useTransform(scrollYProgress, [0, 0.5], [8, -15]);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 4000);
-    setFormState({ name: "", email: "", message: "" });
-  };
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  try {
+    const response = await fetch("https://formspree.io/f/mdenpzlb", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({
+        name: formState.name,
+        email: formState.email,
+        message: formState.message,
+      }),
+    });
+
+    if (response.ok) {
+      setSubmitted(true);
+
+      setFormState({
+        name: "",
+        email: "",
+        message: "",
+      });
+
+      setTimeout(() => {
+        setSubmitted(false);
+      }, 4000);
+    } else {
+      alert("Failed to send message. Please try again.");
+    }
+  } catch (error) {
+    console.error("Form submission error:", error);
+    alert("Something went wrong. Please try again.");
+  }
+};
 
   const scrollToSection = (id: string) => {
     setMobileMenuOpen(false);
